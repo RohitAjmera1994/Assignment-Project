@@ -14,6 +14,7 @@ struct Movie {
     var imageName: String?
 }
 
+
 class DemoTableCell: UITableViewCell {
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var imgMovie: UIImageView!
@@ -27,6 +28,11 @@ class DemoTableCell: UITableViewCell {
 
 class ViewModel {
     let cellIdentifier = "cell_demo"
+    let banners = ["sample-banner",
+                   "sample-banner",
+                   "sample-banner",
+                   "sample-banner",
+                   "sample-banner"]
     var filteredItems: [Movie]?
     let arrItems: [Movie]? = [Movie(name: "Baahubali", imageName: "image"),
                               Movie(name: "Pathaan", imageName: "image"),
