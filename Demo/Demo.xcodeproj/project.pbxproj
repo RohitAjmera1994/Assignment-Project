@@ -13,6 +13,7 @@
 		F957AF5929950F580021B985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F957AF5729950F580021B985 /* Main.storyboard */; };
 		F957AF5B29950F590021B985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F957AF5A29950F590021B985 /* Assets.xcassets */; };
 		F957AF5E29950F590021B985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F957AF5C29950F590021B985 /* LaunchScreen.storyboard */; };
+		F957AF66299513E30021B985 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957AF65299513E30021B985 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F957AF5A29950F590021B985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F957AF5D29950F590021B985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F957AF5F29950F590021B985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F957AF65299513E30021B985 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				F957AF5129950F580021B985 /* AppDelegate.swift */,
 				F957AF5329950F580021B985 /* SceneDelegate.swift */,
 				F957AF5529950F580021B985 /* ViewController.swift */,
+				F957AF65299513E30021B985 /* ViewModel.swift */,
 				F957AF5729950F580021B985 /* Main.storyboard */,
 				F957AF5A29950F590021B985 /* Assets.xcassets */,
 				F957AF5C29950F590021B985 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				F957AF5629950F580021B985 /* ViewController.swift in Sources */,
 				F957AF5229950F580021B985 /* AppDelegate.swift in Sources */,
+				F957AF66299513E30021B985 /* ViewModel.swift in Sources */,
 				F957AF5429950F580021B985 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
