@@ -15,27 +15,33 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.filteredItems = viewModel.arrItems
+        tableView.reloadData()
     }
-
-
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.arrItems?.count ?? 0
+        return viewModel.filteredItems?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: viewModel.cellIdentifier,
-            for: indexPath) as! DemoCell
-        cell.data = viewModel.arrItems?[indexPath.row]
+            for: indexPath) as! DemoTableCell
+        cell.data = viewModel.filteredItems?[indexPath.row]
         return cell
     }
 }
 
 extension ViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.filteredItems = searchText.isEmpty ? viewModel.arrItems : viewModel.arrItems?.filter
+        { $0.name?.range(of: searchText, options: .caseInsensitive) != nil }
+        tableView.reloadData()
+    }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
