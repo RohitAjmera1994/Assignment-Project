@@ -38,5 +38,10 @@ class ViewModel {
                               Movie(name: "Pathaan", imageName: "image"),
                               Movie(name: "KGF Chapter", imageName: "image"),
                               Movie(name: "Dangal", imageName: "image"),
-                              Movie(name: "Sanju", imageName: "image")]
+                              Movie(name: "Sanju", imageName: "image"),
+                              Movie(name: "RRR", imageName: "image"),
+                              Movie(name: "Kick", imageName: "image"),
+                              Movie(name: "Tiger", imageName: "image"),
+                              Movie(name: "Baahubali 2", imageName: "image"),
+                              Movie(name: "Salaam Bombay!", imageName: "image")]
 }
